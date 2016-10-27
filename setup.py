@@ -30,10 +30,12 @@ setup(
     description='REST API daemon to interact with Mailman 2',
     long_description=read('README.rst'),
     install_requires=[
-        "gunicorn >= 18.0",
-        "bottle >= 0.11.6",
+        "setuptools>=20.10",
+        "Paste==1.7.5.1",
+        "bottle>=0.11.6",
         "bottle-beaker>=0.1.0",
         "bottle-cork>=0.12.0",
+        "eventlet==0.19.0",
     ],
     tests_require=TEST_REQUIREMENTS,
 )

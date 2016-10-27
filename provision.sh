@@ -29,9 +29,7 @@ sudo /usr/lib/mailman/bin/newlist mailman admin@project.org some_password
 
 # requirements for mailman-api
 sudo yum -y install python-pip
-sudo pip install bottle
-sudo pip install paste
-sudo pip install bottle-beaker
+sudo pip install -r requirements.txt
 
 # start mailman-api
 cd /vagrant

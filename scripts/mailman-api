@@ -30,5 +30,5 @@ if __name__ == '__main__':
 
     host, port = opt.bind.split(':')
 
-    run(application, host=host, port=port, server='gunicorn',
+    run(application, host=host, port=port, server='eventlet',
         max_requests=1000, workers=opt.workers)
